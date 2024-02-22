@@ -1,8 +1,9 @@
 import React from "react";
 import styles from "./first.module.css";
-import Typewriter from "typewriter-effect"; // Import Typewriter from the correct package
+
 
 function FirstFrame() {
+  
   return (
     <div>
       <section id={styles.herosection}>
@@ -11,26 +12,16 @@ function FirstFrame() {
           Your browser does not support the video tag.
         </video>
         <div className={styles.navbar}>
-          <div className={styles.name}>Surya Prabhas Bandaru</div>
+        
           <ul className={styles.navbarLinks}>
             <li className={styles.active}>Home</li>
             <li>About</li>
-            <li>Portfolio</li>
+            <li>Projects</li>
             <li>Contact</li>
           </ul>
         </div>
-        <div className={styles.centered}>
-          <Typewriter
-            onInit={(typewriter) => {
-              typewriter
-                .typeString("HEY I'M")
-                .pauseFor(1000)
-                .deleteAll()
-                .typeString("SURYA PRABHAS BANDARU")
-                .pauseFor(1000)
-                .start();
-            }}
-          />
+        <div className={styles.centered}>        
+        <h4>Surya Prabhas Bandaru</h4>
         </div>
       </section>
     </div>
